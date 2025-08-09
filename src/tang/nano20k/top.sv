@@ -41,6 +41,9 @@ module top(
   // generic IO, used for mouse/joystick/...
   input [7:0]	io,
 
+  // spare IO, used for joystick/...
+  input [7:0]   spare,
+
   // interface to external BL616/M0S
   inout [5:0]	m0s,
 
@@ -69,6 +72,9 @@ module top(
 
 // physcial dsub9 joystick  
 wire [5:0] db9_joy = { !io[5], !io[0], !io[2], !io[1], !io[4], !io[3] };   
+
+// physcial dsub9 joystick 2  
+wire [5:0] db9_joy2 = { !spare[5], !spare[0], !spare[2], !spare[1], !spare[4], !spare[3] }; 
    
 wire [5:0]	leds;
 assign leds[5] = 1'b0;
@@ -355,8 +361,18 @@ wire [7:0] joystick1 = {
 	  (hid_joy0[1] | db9_joy[1]),
 	  (hid_joy0[0] | db9_joy[0]) };   
 
-wire [7:0] joystick0 = hid_joy1;
+// wire [7:0] joystick0 = hid_joy1;
    
+wire [7:0] joystick0 = { 
+       hid_joy1[7], 
+       hid_joy1[6], 
+      (hid_joy1[5] | db9_joy2[5]), 
+      (hid_joy1[4] | db9_joy2[4]),
+      (hid_joy1[3] | db9_joy2[3]), 
+      (hid_joy1[2] | db9_joy2[2]),
+      (hid_joy1[1] | db9_joy2[1]),
+      (hid_joy1[0] | db9_joy2[0]) }; 
+
 wire [23:1] cpu_a;
 wire cpu_as_n, cpu_lds_n, cpu_uds_n;
 wire cpu_rw, cpu_dtack_n;
