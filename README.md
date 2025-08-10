@@ -1,4 +1,4 @@
-this fork will connect a 2nd DB9 port to the NanoMig 
+the goal of this fork is to connect a 2nd DB9 port to the NanoMig core
 
 # NanoMig
 
