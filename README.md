@@ -1,4 +1,4 @@
-the goal of this fork is to connect a 2nd DB9 port to the NanoMig core
+the goal of this fork is to connect a 2nd DB9 port to the NanoMig core by the spare pins
 
 ![SPARE IO for 2nd DB9 JOYSTICK](https://github.com/user-attachments/assets/e232ff88-4a81-4089-91b8-894ffb2d1509)
 
