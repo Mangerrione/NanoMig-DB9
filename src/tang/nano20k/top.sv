@@ -361,12 +361,15 @@ wire [7:0] joystick1 = {
 	  (hid_joy0[1] | db9_joy[1]),
 	  (hid_joy0[0] | db9_joy[0]) };   
 
+// map second HID/USB joystick into first amiga joystick port
+// wire in db9 joystick
+
 // wire [7:0] joystick0 = hid_joy1;
    
 wire [7:0] joystick0 = { 
        hid_joy1[7], 
        hid_joy1[6], 
-      (hid_joy1[5] | db9_joy2[5]), 
+       hid_joy1[5], 
       (hid_joy1[4] | db9_joy2[4]),
       (hid_joy1[3] | db9_joy2[3]), 
       (hid_joy1[2] | db9_joy2[2]),
