@@ -2,6 +2,10 @@ The goal of this fork was to connect a 2nd DB9 port to the NanoMig core by the s
 
 ![SPARE IO for 2nd DB9 JOYSTICK](https://github.com/user-attachments/assets/e232ff88-4a81-4089-91b8-894ffb2d1509)
 
+![1000193177](https://github.com/user-attachments/assets/2ea343e6-4c90-412d-9c63-323e5939eac4)
+
+![1000193174](https://github.com/user-attachments/assets/0bb7fcc1-babb-4768-b0b2-be99d7b8a4ab)
+
 
 # NanoMig
 
