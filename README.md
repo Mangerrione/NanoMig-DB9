@@ -2,7 +2,7 @@ The goal of this fork was to connect a 2nd DB9 port to the NanoMig core by the s
 
 Only one-button joysticks are supported.
 
-![SPARE IO for 2nd DB9 JOYSTICK](https://github.com/user-attachments/assets/e232ff88-4a81-4089-91b8-894ffb2d1509)
+![SPARE IO for  2nd DB9 JOYSTICK](https://github.com/user-attachments/assets/33c07ded-53fd-4a25-b0f3-8c9ec055f65f)
 
 ![1000193177](https://github.com/user-attachments/assets/2ea343e6-4c90-412d-9c63-323e5939eac4)
 
